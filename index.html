@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jalon — gestion de tâches</title>
+  <meta name="description" content="Jalon : application personnelle de suivi des tâches confiées à des collaborateurs, sur PC et Android.">
+  <link rel="icon" href="jalon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <img src="jalon.svg" alt="">
+    <div>
+      <h1>Jalon</h1>
+      <p>Suivi des tâches confiées à des collaborateurs, sur PC et téléphone Android.</p>
+    </div>
+  </header>
+
+  <section>
+    <h2>Ce que fait Jalon</h2>
+    <ul>
+      <li>Enregistrer des tâches, les confier à un responsable et à des contributeurs, suivre leur avancement (la couleur de chaque tâche évolue avec son avancement).</li>
+      <li>Envoyer une tâche ou un rappel à un collaborateur par e-mail ou par WhatsApp.</li>
+      <li>Joindre à une tâche les réponses reçues des collaborateurs.</li>
+      <li>Synchroniser le PC et le téléphone par un dossier <strong>chiffré</strong> sur le Google Drive de l’utilisateur.</li>
+      <li>Optionnellement, publier les tâches dans Nextcloud Deck.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Utilisation des données Google</h2>
+    <p>Jalon demande deux autorisations Google, et seulement celles-ci :</p>
+    <ul>
+      <li><strong>Google Drive, fichiers créés par Jalon</strong> (<code>drive.file</code>) : pour enregistrer les fichiers de synchronisation, chiffrés, dans le dossier « Jalon (synchro chiffrée) ». Jalon ne voit pas les autres fichiers du Drive.</li>
+      <li><strong>Gmail, envoi uniquement</strong> (<code>gmail.send</code>) : pour envoyer les tâches et les rappels rédigés dans Jalon. Jalon ne peut pas lire les e-mails.</li>
+    </ul>
+    <p>Les données restent sur les appareils de l’utilisateur et dans son propre Google Drive. Elles ne sont envoyées ni au développeur, ni à un tiers.</p>
+    <p>Détails : <a href="confidentialite.html">règles de confidentialité</a>.</p>
+  </section>
+
+  <footer>
+    Jalon est une application personnelle, sans publicité ni collecte de données.
+    · <a href="confidentialite.html">Règles de confidentialité</a>
+  </footer>
+</main>
+</body>
+</html>

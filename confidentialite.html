@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jalon — règles de confidentialité</title>
+  <meta name="description" content="Règles de confidentialité de l'application Jalon.">
+  <link rel="icon" href="jalon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <img src="jalon.svg" alt="">
+    <div>
+      <h1>Règles de confidentialité</h1>
+      <p><a href="./">Jalon</a> · en vigueur depuis le 21 novembre 2026</p>
+    </div>
+  </header>
+
+  <section>
+    <h2>En bref</h2>
+    <ul>
+      <li>Jalon n’a <strong>pas de serveur</strong> central : il fonctionne sur le PC et le téléphone de l’utilisateur.</li>
+      <li>Les données ne sont <strong>ni collectées, ni vendues, ni partagées</strong> avec le développeur ou des tiers.</li>
+      <li>Aucune publicité, aucune mesure d’audience, aucun traceur.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Données traitées</h2>
+    <p>L’utilisateur saisit dans Jalon ses tâches, les contacts de ses collaborateurs (nom, fonction, e-mail, numéro WhatsApp), les réponses reçues et des pièces jointes. Ces données sont enregistrées <strong>sur ses appareils</strong> (stockage local du navigateur ou de l’application Android).</p>
+  </section>
+
+  <section>
+    <h2>Données Google</h2>
+    <p>Avec l’accord de l’utilisateur, Jalon accède à son compte Google avec deux autorisations :</p>
+    <ul>
+      <li><strong>Google Drive — fichiers créés par Jalon</strong> (<code>https://www.googleapis.com/auth/drive.file</code>). Jalon y crée le dossier « Jalon (synchro chiffrée) » et y dépose les fichiers de synchronisation entre le PC et le téléphone. Ces fichiers sont <strong>chiffrés sur l’appareil</strong> (AES-256-GCM) avec une phrase secrète que seul l’utilisateur connaît, avant d’être envoyés : ni Google ni le développeur ne peuvent les lire. Jalon n’a pas accès aux autres fichiers du Drive.</li>
+      <li><strong>Gmail — envoi de messages</strong> (<code>https://www.googleapis.com/auth/gmail.send</code>). Jalon envoie, depuis l’adresse de l’utilisateur, les tâches et les rappels qu’il a choisi d’envoyer à ses collaborateurs. Jalon ne lit, ne modifie et ne supprime aucun e-mail.</li>
+    </ul>
+    <p>Les jetons d’accès Google restent sur les appareils de l’utilisateur. Sur le PC, le jeton de renouvellement est conservé localement par le petit serveur de Jalon, qui n’accepte que les connexions de ce PC.</p>
+    <p><strong>Utilisation limitée.</strong> L’utilisation et le transfert vers toute autre application des informations reçues des API Google respectent les <a href="https://developers.google.com/terms/api-services-user-data-policy">Règles relatives aux données utilisateur des services d’API Google</a>, y compris les exigences d’utilisation limitée. Ces données ne servent qu’aux fonctions décrites ci-dessus. Elles ne sont jamais utilisées à des fins publicitaires, ni transférées à des tiers, ni lues par une personne.</p>
+  </section>
+
+  <section>
+    <h2>Autres services, à l’initiative de l’utilisateur</h2>
+    <ul>
+      <li><strong>WhatsApp</strong> : Jalon ouvre WhatsApp avec un message pré-rempli ; l’utilisateur décide de l’envoyer.</li>
+      <li><strong>Nextcloud Deck</strong> (facultatif) : si l’utilisateur le configure, Jalon publie les tâches sur son propre Nextcloud. Le mot de passe d’application reste sur l’appareil où il a été saisi.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Conservation et suppression</h2>
+    <ul>
+      <li>Les données restent tant que l’utilisateur les conserve dans Jalon.</li>
+      <li>Pour retirer l’accès de Jalon à Google : <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, ou « Déconnecter Google » dans les réglages de Jalon.</li>
+      <li>Pour tout supprimer : supprimer le dossier « Jalon (synchro chiffrée) » du Google Drive, puis effacer les données de Jalon sur chaque appareil (ou désinstaller l’application).</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Pour toute question sur ces règles, écrivez à l’adresse d’assistance affichée sur l’écran d’autorisation Google de Jalon.</p>
+  </section>
+
+  <footer><a href="./">Retour à l’accueil de Jalon</a></footer>
+</main>
+</body>
+</html>
